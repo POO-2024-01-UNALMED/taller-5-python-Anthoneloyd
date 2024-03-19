@@ -1,3 +1,5 @@
+from zooAnimales.animal import Animal
+
 class Ave(Animal):
     _listado = []
 
@@ -9,9 +11,11 @@ class Ave(Animal):
         self._colorPlumas = colorPlumas
         Ave._listado.append(self)
 
+    @staticmethod
     def cantidadAves():
         return len(Ave._listado)
 
+    @staticmethod
     def movimiento():
         return "volar"
 

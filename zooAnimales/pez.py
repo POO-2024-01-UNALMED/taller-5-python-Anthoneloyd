@@ -1,4 +1,7 @@
+from zooAnimales.animal import Animal
+
 class Pez(Animal):
+
     _listado = []
 
     salmones = 0
@@ -10,9 +13,11 @@ class Pez(Animal):
         self._cantidadAletas = cantidadAletas
         Pez._listado.append(self)
 
+    @staticmethod
     def cantidadPeces():
         return len(Pez._listado)
 
+    @staticmethod
     def movimiento():
         return "nadar"
 

@@ -1,3 +1,5 @@
+from zooAnimales.animal import Animal
+
 def Reptil(Animal):
     _listado = []
 
@@ -10,9 +12,11 @@ def Reptil(Animal):
         self._largoCola = largoCola
         Reptil._listado.append(self)
 
+    @staticmethod
     def cantidadReptiles():
         return len(Reptil._listado)
 
+    @staticmethod
     def movimiento():
         return "repar"
 

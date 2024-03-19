@@ -1,3 +1,5 @@
+from zooAnimales.animal import Animal
+
 class Anfibio(Animal):
     _listado = []
 
@@ -10,9 +12,11 @@ class Anfibio(Animal):
         self._venenoso = venenoso
         Anfibio._listado.append(self)
 
+    @staticmethod
     def cantidadAnfibios():
         return len(Anfibio._listado)
 
+    @staticmethod
     def movimiento():
         return "saltar"
 

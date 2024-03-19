@@ -1,3 +1,5 @@
+from zooAnimales.animal import Animal
+
 class Mamifero (Animal):
     _listado = []
 
@@ -10,6 +12,7 @@ class Mamifero (Animal):
         self._patas = patas
         Mamifero._listado.append(self)
 
+    @staticmethod
     def cantidadMamiferos():
         return len(Mamifero._listado)
 

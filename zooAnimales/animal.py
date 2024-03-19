@@ -1,3 +1,5 @@
+import zooAnimales
+
 class Animal:
     _totalAnimales = 0
     _zona = None
@@ -9,7 +11,8 @@ class Animal:
         self.genero = genero
         self._totalAnimales += 1
 
-    def movimiento ():
+    @staticmethod
+    def movimiento():
         return "desplazarse"
 
     @classmethod
