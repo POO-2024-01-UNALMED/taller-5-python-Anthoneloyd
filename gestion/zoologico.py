@@ -15,14 +15,14 @@ class Zoologico:
         return cantidad
 
     def getNombre(self):
-        return self.nombre
+        return self._nombre
     def setNombre(self, nombre):
-        self.nombre = nombre
+        self._nombre = nombre
 
     def getUbicacion(self):
-        return self.ubicacion
+        return self._ubicacion
     def setUbicacion(self, ubicacion):
-        self.ubicacion = ubicacion
+        self._ubicacion = ubicacion
 
     def getZona(self):
         return self._zonas

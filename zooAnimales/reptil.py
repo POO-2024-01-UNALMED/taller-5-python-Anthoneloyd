@@ -1,6 +1,6 @@
 from zooAnimales.animal import Animal
 
-def Reptil(Animal):
+class Reptil(Animal):
     _listado = []
 
     iguanas = 0
@@ -25,6 +25,7 @@ def Reptil(Animal):
         cls.iguanas += 1
         return Reptil(nombre, edad, "humedal", genero, "verde", 3)
 
+    @classmethod
     def crearSerpiente(cls, nombre, edad, genero):
         cls.serpientes += 1
         return Reptil(nombre, edad, "jungla", genero, "blanco", 1)
